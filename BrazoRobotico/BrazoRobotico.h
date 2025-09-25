@@ -1,6 +1,7 @@
-#include <BrazoRobotico.cpp>
+#ifndef BRAZOROBOTICO_H
+#define BRAZOROBOTICO_H
 
-class BrazoRobotico(){
+class BrazoRobotico{
 	private:
 		int x;
 		int y;
@@ -8,11 +9,15 @@ class BrazoRobotico(){
 		bool sujetandoObjeto;
 	public:
 		BrazoRobotico();
-		getX();
-		getY();
-		getZ();
-		getSujetandoObjeto();
-		coger();
-		soltar();
-		mover(double _x, double _y, double _z);
+
+		int getX();
+		int getY();
+		int getZ();
+		bool getSujetandoObjeto();
+		
+		void coger();
+		void soltar();
+		void mover(double _x, double _y, double _z);
 }
+
+#endif
