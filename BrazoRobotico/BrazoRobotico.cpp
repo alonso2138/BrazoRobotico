@@ -1,4 +1,4 @@
-#include <BrazoRobotico.h>
+#include "BrazoRobotico.h"
 
 BrazoRobotico::BrazoRobotico(){
 	x=0;
